@@ -21,7 +21,7 @@ bt = st.button("Raimni tekshirish !!")
 if bt:
     img = PILImage.create(file)
     # model
-    model = load_learner("model/food_mix.pkl")
+    model = load_learner("food_mix.pkl")
     prediction, _, probs = model.predict(img)
 
     st.image(img)
