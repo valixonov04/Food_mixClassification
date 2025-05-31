@@ -3,7 +3,10 @@ import streamlit as st
 from fastai.vision.all import *
 import pathlib
 from fasttransform.transform import Transform, Pipeline
+import pathlib
 
+plt = platform.system()
+if plt =="Linux": pathlib.WindowsPath = pathlib.PosixPath
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
