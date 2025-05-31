@@ -4,7 +4,8 @@ from fastai.vision.all import *
 import pathlib
 from fasttransform.transform import Transform, Pipeline
 import pathlib
-
+import os
+print(os.path.exists('food_mix.pkl'))
 plt = platform.system()
 if plt =="Linux": pathlib.WindowsPath = pathlib.PosixPath
 temp = pathlib.PosixPath
