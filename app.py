@@ -12,7 +12,7 @@ temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
 # Sarlavha
-st.title("Bu model sizga mevalarni classifikatsiya qilib beradi..!")
+st.title("Bu model sizga Istemol qilish mumkin bo'lgan mahsulotlarni Klassifikatsiya qilib beradi!")
 
 # Rasm yuklash
 file = st.file_uploader("Rasm yuklang", type=["jpg", "jpeg", "png","webp"])
