@@ -32,5 +32,5 @@ if bt:
     st.toggle("Qayta sinab ko'rish !")
 
 if st.button("Clear Uploaded File"):
-    st.session_state.file = None
+    st.session_state.uploaded_file = None
     st.rerun()
