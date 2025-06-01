@@ -17,7 +17,7 @@ st.title("Bu model sizga Istemol qilish mumkin bo'lgan mahsulotlarni Klassifikat
 # Rasm yuklash
 file = st.file_uploader("Rasm yuklang", type=["jpg", "jpeg", "png","webp"])
 
-bt = st.button("Raimni tekshirish !!")
+bt = st.button("Rasmni  tekshirish !!")
 
 if bt:
     img = PILImage.create(file)
@@ -30,6 +30,7 @@ if bt:
     st.success(f"Tasnif: **{prediction}** (Ehtimollik: {probs.max().item():.2%})")
 
     st.toggle("Qayta sinab ko'rish !")
-bt2 = st.button("Sahifani yangilash !")
-if bt2:
+
+if st.button("Clear Uploaded File"):
+    st.session_state.file = None
     st.rerun()
